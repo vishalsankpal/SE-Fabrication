@@ -1,0 +1,384 @@
+:root {
+    --first-color: #00aeef;
+    --second-color: purple;
+    --second-color-gradient:linear-gradient(rgba(128, 0, 128, 0.66),rgba(128, 0, 128, 0.66));
+    --white: #fff;
+    --black: #000;
+    --page-bg: #efefef;
+    --gradient: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.ptb-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* header start */
+header nav.bg-darked {
+    background: var(--black);
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    font-weight: 500;
+    color: var(--white);
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+/* header end */
+/* banner start */
+.banner {
+    padding: 11.1%;
+    width: 100%;
+    background: var(--gradient), url(../images/banner_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-repeat: no-repeat;
+}
+
+main {
+    background: var(--page-bg);
+}
+
+main .banner h1.banner-heading {
+    font-size: 65px;
+    letter-spacing: 4px;
+}
+
+main .banner p.banner-discription {
+    font-size: 34px;
+    letter-spacing: 4px;
+}
+
+main .banner ul li .banner-get-in-touch {
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    font-size: 18px;
+    border: 1px solid var(--first-color);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    z-index: 5;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 4px;
+}
+
+main .banner ul li .banner-get-in-touch-services {
+    padding: 0.8rem 1rem;
+    border-radius: 40px;
+    border: 1px solid var(--second-color);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+    z-index: 5;
+    background: transparent;
+    letter-spacing: 4px;
+}
+
+main .banner ul li .banner-get-in-touch span,
+main .banner ul li .banner-get-in-touch-services span {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: 0;
+}
+
+main .banner ul li .banner-get-in-touch:hover span {
+    width: 100%;
+    background: var(--first-color);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+}
+
+main .banner ul li .banner-get-in-touch-services:hover span {
+    width: 100%;
+    background: var(--second-color);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+}
+
+/* banner end */
+/* who we are start */
+p.who-we-are,
+p.who-we-are-discription,
+p.lets-start-project-discription,
+p.quick-contact-discription {
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+main section .first-hover-box::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: var(--first-color);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+main .image-z {
+    z-index: 2;
+}
+
+main section .first-hover-box:hover::after,
+main section .second-hover-box:hover::after {
+    left: 15px;
+    top: 15px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+main section .second-hover-box::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: var(--second-color);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+/* who we are end */
+/* we are full service start */
+main section.full-service {
+    background: var(--gradient), url(../images/service_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main section.full-service .all-services,
+main section.type-grid .redirect-info button{
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    border-radius: 40px;
+    border: 1px solid var(--first-color);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    z-index: 5;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 4px;
+}
+
+main section.full-service .all-services span,
+main section.type-grid .redirect-info button span{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: 0;
+}
+
+main section.full-service .all-services:hover span,
+main section.type-grid .redirect-info button:hover span{
+    width: 100%;
+    background: var(--first-color);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+}
+main section.type-grid .type-img-grid-container{
+    overflow: hidden;
+    -webkit-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+}
+main section.type-grid .redirect-info{
+    z-index: 0;
+    /* background: var(--gradient); */
+    background: var(--second-color-gradient);
+    left: 0;
+    top: -100px;
+    width: 100%;
+    height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+}
+main section.type-grid .type-img-grid-container:hover .redirect-info{
+    -webkit-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+    height: 100%;
+    top: 0;
+}
+main section.type-grid .redirect-info h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+/* we are full service end */
+/* lets start a project start*/
+main section.lets-start-project {
+    background: var(--gradient), url(../images/project_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main section.lets-start-project .contact-us {
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    border: 1px solid var(--second-color);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    z-index: 5;
+    overflow: hidden;
+    background: transparent;
+    letter-spacing: 4px;
+    border-radius: 40px;
+}
+
+main section.lets-start-project .contact-us span {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: 0;
+}
+
+main section.lets-start-project .contact-us:hover span {
+    width: 100%;
+    background: var(--second-color);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    z-index: -1;
+}
+
+main section.quick-contact .send-message {
+    padding: 0.8rem 1rem;
+    font-size: 18px;
+    border: 1px solid var(--second-color);
+    -webkit-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+    z-index: 5;
+    overflow: hidden;
+    background: var(--second-color);
+    letter-spacing: 4px;
+    color: var(--white);
+    border-radius: 40px;
+}
+
+/* lets start a projecr end */
+/* footer start */
+footer {
+    background: var(--black);
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+footer ul li {
+    line-height: 2;
+}
+
+footer ul li a {
+    letter-spacing: 2px;
+}
+
+/* footer end */

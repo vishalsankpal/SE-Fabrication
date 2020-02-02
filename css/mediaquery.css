@@ -1,0 +1,95 @@
+@media screen and (max-width: 1200px) {
+    main .banner h1.banner-heading{
+        font-size: 50px;
+    }
+    main .banner p.banner-discription{
+        font-size: 26px;
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        font-size: 15px;
+    }
+    .navbar-dark .navbar-nav .active>.nav-link,
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .navbar-dark .navbar-nav .show>.nav-link{
+        font-size: 15px;
+    }
+    main .banner ul li .banner-get-in-touch,
+    main .banner ul li .banner-get-in-touch-services,
+    main section.full-service .all-services,
+    main section.type-grid .redirect-info button,
+    main section.lets-start-project .contact-us,
+    main section.quick-contact .send-message{
+        font-size: 12px;
+    }
+    .section-heading{
+        font-size: 30px;
+    }
+    p.who-we-are,
+    p.who-we-are-discription,
+    p.lets-start-project-discription,
+    p.quick-contact-discription{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    main .banner h1.banner-heading {
+        font-size: 40px;
+    }
+    main .banner p.banner-discription {
+        font-size: 20px;
+    }
+    footer a,
+    footer p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .banner h1.banner-heading {
+        font-size: 28px;
+    }
+    main .banner p.banner-discription {
+        font-size: 16px;
+    }
+    .section-heading {
+        font-size: 25px;
+    }
+    p.who-we-are, p.who-we-are-discription, p.lets-start-project-discription, p.quick-contact-discription{
+        font-size: 15px;
+    }
+    main section.type-grid .redirect-info h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main .banner h1.banner-heading {
+        font-size: 20px;
+    }
+    main .banner p.banner-discription {
+        font-size: 10px;
+    }
+    main .banner ul li .banner-get-in-touch-services,
+    main .banner ul li .banner-get-in-touch{
+        padding: 0.4rem 0.4rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main .banner h1.banner-heading {
+        font-size: 14px;
+    }
+    main .banner p.banner-discription {
+        font-size: 8px;
+    }
+    .section-heading {
+        font-size: 22px;
+    }
+    p.who-we-are, p.who-we-are-discription, p.lets-start-project-discription, p.quick-contact-discription{
+        font-size: 14px;
+    }
+    header nav .navbar-brand img{
+        width: 120px;
+    }
+}
